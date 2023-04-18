@@ -18,8 +18,6 @@ SRC_URI="
 	arm64? ( https://downloads.haskell.org/~ghcup/${PV}/aarch64-linux-${MY_PN}-${PV} -> ghcup )
 "
 
-$S="${WORKDIR}/${P}"
-
 LICENSE="LGPL-3"
 SLOT="0"
 KEYWORDS="-* amd64 ~x86 ~arm ~arm64"
