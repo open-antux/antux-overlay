@@ -20,14 +20,14 @@ SRC_URI="
 
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="-* amd64 ~x86 ~arm ~arm64"
+KEYWORDS="-* amd64 ~arm ~arm64 ~x86"
 
 src_unpack() {
-	mkdir $S
+	mkdir "$S"
 }
 
 src_install() {
-	mv ${DISTDIR}/ghcup .
+	mv "${DISTDIR}/ghcup" .
 
 	exeinto /usr/bin
 	doexe ghcup
