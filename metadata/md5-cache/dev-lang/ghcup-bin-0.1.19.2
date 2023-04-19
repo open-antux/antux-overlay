@@ -1,0 +1,9 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=GHCup is the main installer for the general purpose language Haskell.
+EAPI=8
+HOMEPAGE=https://www.haskell.org/ghcup/ https://github.com/haskell/ghcup-hs
+KEYWORDS=-* amd64 ~arm ~arm64 ~x86
+LICENSE=LGPL-3
+SLOT=0
+SRC_URI=amd64? ( https://downloads.haskell.org/~ghcup/0.1.19.2/x86_64-linux-ghcup-0.1.19.2 -> ghcup ) x86? ( https://downloads.haskell.org/~ghcup/0.1.19.2/i386-linux-ghcup-0.1.19.2 -> ghcup ) arm? ( https://downloads.haskell.org/~ghcup/0.1.19.2/armv7-linux-ghcup-0.1.19.2 -> ghcup ) arm64? ( https://downloads.haskell.org/~ghcup/0.1.19.2/aarch64-linux-ghcup-0.1.19.2 -> ghcup )
+_md5_=4f337e116c42874fa290f1ca59654c36
